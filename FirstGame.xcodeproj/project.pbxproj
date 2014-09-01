@@ -24,6 +24,10 @@
 		635808F318A1CA4F00156490 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 635808CE18A1CA4E00156490 /* UIKit.framework */; };
 		635808FB18A1CA4F00156490 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 635808F918A1CA4F00156490 /* InfoPlist.strings */; };
 		635808FD18A1CA4F00156490 /* FirstGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 635808FC18A1CA4F00156490 /* FirstGameTests.m */; };
+		6358090B18A1CBBB00156490 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6358090818A1CBBB00156490 /* background-music-aac.caf */; };
+		6358090C18A1CBBB00156490 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6358090918A1CBBB00156490 /* pew-pew-lei.caf */; };
+		6358090D18A1CBBB00156490 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 6358090A18A1CBBB00156490 /* sprites.atlas */; };
+		6358091018A1CFFF00156490 /* GameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6358090F18A1CFFF00156490 /* GameOverScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,11 @@
 		635808F818A1CA4F00156490 /* FirstGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FirstGameTests-Info.plist"; sourceTree = "<group>"; };
 		635808FA18A1CA4F00156490 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		635808FC18A1CA4F00156490 /* FirstGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstGameTests.m; sourceTree = "<group>"; };
+		6358090818A1CBBB00156490 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
+		6358090918A1CBBB00156490 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
+		6358090A18A1CBBB00156490 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		6358090E18A1CFFF00156490 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
+		6358090F18A1CFFF00156490 /* GameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +136,9 @@
 				635808E118A1CA4F00156490 /* ViewController.h */,
 				635808E218A1CA4F00156490 /* ViewController.m */,
 				635808E418A1CA4F00156490 /* MyScene.h */,
+				6358090E18A1CFFF00156490 /* GameOverScene.h */,
+				6358090F18A1CFFF00156490 /* GameOverScene.m */,
+				6358090618A1CBBB00156490 /* SpriteKitSimpleGameResources */,
 				635808E518A1CA4F00156490 /* MyScene.m */,
 				635808E718A1CA4F00156490 /* Spaceship.png */,
 				635808E918A1CA4F00156490 /* Images.xcassets */,
@@ -162,6 +174,24 @@
 				635808F918A1CA4F00156490 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6358090618A1CBBB00156490 /* SpriteKitSimpleGameResources */ = {
+			isa = PBXGroup;
+			children = (
+				6358090718A1CBBB00156490 /* Sounds */,
+				6358090A18A1CBBB00156490 /* sprites.atlas */,
+			);
+			path = SpriteKitSimpleGameResources;
+			sourceTree = "<group>";
+		};
+		6358090718A1CBBB00156490 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6358090818A1CBBB00156490 /* background-music-aac.caf */,
+				6358090918A1CBBB00156490 /* pew-pew-lei.caf */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,10 +270,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6358090D18A1CBBB00156490 /* sprites.atlas in Resources */,
+				6358090B18A1CBBB00156490 /* background-music-aac.caf in Resources */,
 				635808D718A1CA4F00156490 /* InfoPlist.strings in Resources */,
 				635808EA18A1CA4F00156490 /* Images.xcassets in Resources */,
 				635808E818A1CA4F00156490 /* Spaceship.png in Resources */,
 				635808E018A1CA4F00156490 /* Main.storyboard in Resources */,
+				6358090C18A1CBBB00156490 /* pew-pew-lei.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6358091018A1CFFF00156490 /* GameOverScene.m in Sources */,
 				635808E618A1CA4F00156490 /* MyScene.m in Sources */,
 				635808E318A1CA4F00156490 /* ViewController.m in Sources */,
 				635808DD18A1CA4F00156490 /* AppDelegate.m in Sources */,
